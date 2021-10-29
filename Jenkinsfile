@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh ("sudo su")
-                sh ("sudo docker cp /var/lib/jenkins/workspace/git-pull/hello.html mynginx1:/usr/share/nginx/html/index.html")
+                sh ("sudo docker cp /var/lib/jenkins/workspace/test-3/hello.html mynginx1:/usr/share/nginx/html/index.html")
             }
         }
         stage('Test') {
